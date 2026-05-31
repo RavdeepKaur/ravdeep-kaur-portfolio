@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Onboarding and Technical Enablement Guides | Ravdeep Kaur</title>
+    <link rel="stylesheet" href="../styles.css?v=20260531-skills-section-rework">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="../index.html#top">
+          <span>Ravdeep Kaur</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html#portfolio-work">Portfolio Work</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#instructional-practice">Skills</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sample-page">
+      <header>
+        <p class="eyebrow">Developer Enablement and Technical Documentation</p>
+        <h1>Developer Onboarding and Technical Enablement Guides</h1>
+        <p class="lead">
+          Professional onboarding topics for environment readiness, full-stack application setup, QA automation,
+          cloud deployment, database integration, mobile tooling, and technical handoff documentation.
+        </p>
+      </header>
+
+      <section class="lesson-box">
+        <h2>Documentation Goal</h2>
+        <p>
+          These samples show how technical procedures can be converted into clear onboarding material with
+          prerequisites, setup steps, validation checks, troubleshooting notes, and delivery-ready handoff guidance
+          for internal training, customer education, product support, and L&amp;D teams.
+        </p>
+      </section>
+
+      <div class="technical-layout">
+        <aside class="technical-index" aria-labelledby="enablement-nav-title">
+          <p class="eyebrow">Quick Navigation</p>
+          <h2 id="enablement-nav-title">Enablement Guide Areas</h2>
+          <nav class="concept-grid" aria-label="Developer onboarding areas">
+            <a href="#onboarding-topics">Technical Onboarding Topics</a>
+            <a href="#react-workflow">React Developer Workflow</a>
+            <a href="#react-native-setup">React Native Mobile Setup</a>
+            <a href="#azure-resource-guide">Azure Resource Creation</a>
+            <a href="#aspnet-database">ASP.NET MVC and Database</a>
+            <a href="#api-json-server">API and JSON Server Practice</a>
+            <a href="#joomla-build">Joomla Website Build</a>
+            <a href="#enablement-deliverables">Technical Enablement Deliverables</a>
+          </nav>
+        </aside>
+
+        <div class="technical-content">
+      <section id="onboarding-topics" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Enablement Overview</span>Technical Onboarding Topics</h2>
+        <div class="course-map-grid">
+          <article>
+            <p class="eyebrow">Environment Readiness</p>
+            <h3>IDE, Runtime, Local Server, and Emulator Setup</h3>
+            <p>Prerequisite checks for Node.js, npm, VS Code, Visual Studio, Android Studio, XAMPP, SDK paths, emulators, local servers, and project dependencies.</p>
+          </article>
+          <article>
+            <p class="eyebrow">Frontend Development</p>
+            <h3>React Components, Routing, State, and Local APIs</h3>
+            <p>Onboarding path for React components, props, state, hooks, React Router, JSON Server, Axios, search workflows, local storage, and browser debugging.</p>
+          </article>
+          <article>
+            <p class="eyebrow">Mobile Development</p>
+            <h3>React Native CLI, Android Emulator, and App Validation</h3>
+            <p>Mobile setup guidance for React Native CLI, Metro bundler, Android emulator readiness, TextInput, reusable components, state updates, and build-error resolution.</p>
+          </article>
+          <article>
+            <p class="eyebrow">Cloud and Deployment</p>
+            <h3>Azure Portal, ARM Templates, CLI, and PowerShell</h3>
+            <p>Cloud enablement for resource groups, storage accounts, virtual machines, portal validation, ARM templates, Azure CLI, PowerShell, and repeatable deployment basics.</p>
+          </article>
+          <article>
+            <p class="eyebrow">Database Integration</p>
+            <h3>ASP.NET MVC, Entity Framework, SQL Server, and Connection Strings</h3>
+            <p>Database-backed application onboarding for MVC structure, Entity Framework, DbContext registration, migrations, connection strings, LocalDB, SQL Server validation, and CRUD flow.</p>
+          </article>
+          <article>
+            <p class="eyebrow">QA Automation</p>
+            <h3>Selenium WebDriver, ChromeDriver, JUnit, and Link Testing</h3>
+            <p>QA onboarding for driver compatibility, browser automation setup, test suites, element locators, link validation, and test-output documentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="react-workflow" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Frontend Enablement</span>React Developer Workflow</h2>
+        <table>
+          <thead>
+            <tr><th>Stage</th><th>Developer Activity</th><th>Validation Check</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Environment</td><td>Install Node.js, npm, VS Code, browser tools, and project dependencies.</td><td><code>node -v</code> and <code>npm -v</code> return supported versions.</td></tr>
+            <tr><td>Project Run</td><td>Install packages and start the local development server.</td><td>Application opens locally without compile errors.</td></tr>
+            <tr><td>Component Practice</td><td>Create a reusable card/list/form component using props and state.</td><td>UI updates when data or input changes.</td></tr>
+            <tr><td>Debugging</td><td>Use browser console, React error messages, and incremental testing.</td><td>Learner can identify where a UI issue originates.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="react-native-setup" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Mobile Enablement</span>React Native Mobile Setup Guide</h2>
+        <ol>
+          <li>Verify Node.js, npm, Java/JDK requirements, Android Studio, Android SDK, and emulator configuration.</li>
+          <li>Create or open the project in VS Code and confirm package dependencies are installed.</li>
+          <li>Start the Android emulator before running the mobile project.</li>
+          <li>Run the project with <code>npx react-native run-android</code> or the required project command.</li>
+          <li>Make a small text or button change and verify the update in the emulator.</li>
+          <li>Document any build errors with the command used, error message, attempted fix, and final resolution.</li>
+        </ol>
+        <div class="lesson-box">
+          <h3>Common Troubleshooting Notes</h3>
+          <p>
+            Check SDK path settings, emulator state, Metro bundler status, port conflicts, package installation, and
+            whether the app needs a clean rebuild after dependency changes.
+          </p>
+        </div>
+      </section>
+
+      <section id="azure-resource-guide" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Cloud Enablement</span>Azure Resource Creation Guide</h2>
+        <table>
+          <thead>
+            <tr><th>Method</th><th>Training Focus</th><th>Professional Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Azure Portal</td><td>Resource groups, navigation, review/create workflow, visual validation.</td><td>Supports new users and business stakeholders.</td></tr>
+            <tr><td>ARM Template</td><td>JSON structure, repeatable deployment, parameters, resource consistency.</td><td>Introduces infrastructure-as-code thinking.</td></tr>
+            <tr><td>Azure CLI</td><td>Command-line creation, automation, naming conventions, scripted validation.</td><td>Supports cloud operations readiness and repeatable deployment practice.</td></tr>
+            <tr><td>PowerShell</td><td>Administrative automation, modules, authentication, resource management.</td><td>Connects training to enterprise admin tasks.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="aspnet-database" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Full-Stack Enablement</span>ASP.NET MVC and Database Onboarding Notes</h2>
+        <p>
+          Technical objective: understand application structure, routing, controllers, actions, models, views,
+          connection strings, Entity Framework Core registration, migrations, and database validation.
+        </p>
+        <pre><code>// appsettings.json
+"MVC_ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=MvcAppDb;Trusted_Connection=True;"
+
+// Program.cs focus:
+// register DbContext, confirm dependency injection, then test controller/database flow.</code></pre>
+        <ul>
+          <li>Confirm the connection string points to the intended local or development database.</li>
+          <li>Explain where services are registered and how controllers receive dependencies.</li>
+          <li>Run a simple create/read action before adding more complex features.</li>
+          <li>Use error messages to distinguish routing, model, database, and migration issues.</li>
+        </ul>
+      </section>
+
+      <section id="api-json-server" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>API Enablement</span>API and JSON Server Practice Guide</h2>
+        <p>
+          This guide supports the transition from static UI work into data-driven applications. It can be
+          adapted for React, mobile web, QA testing, and customer education.
+        </p>
+        <pre><code>{
+  "courses": [
+    { "id": 1, "title": "Database Theory", "level": "Intermediate" },
+    { "id": 2, "title": "React Native", "level": "Applied" }
+  ]
+}</code></pre>
+        <ul>
+          <li>Start a local JSON server or mock API.</li>
+          <li>Fetch records from the UI and render them in a reusable component.</li>
+          <li>Test loading, empty, success, and error states.</li>
+          <li>Document endpoints, sample payloads, status codes, and expected UI behavior.</li>
+        </ul>
+      </section>
+
+      <section id="joomla-build" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>CMS Enablement</span>Joomla Website Build Checklist</h2>
+        <ul>
+          <li>Install and run XAMPP for local hosting.</li>
+          <li>Place Joomla files in the local server directory and complete setup.</li>
+          <li>Create categories for site pages, blog content, services, and media.</li>
+          <li>Add Home, About, Services, Gallery, Contact, and Blog pages.</li>
+          <li>Configure navigation, banners, footer items, article images, template layout, and database export.</li>
+          <li>Validate the final site by checking links, page titles, images, forms, and mobile layout.</li>
+        </ul>
+      </section>
+
+      <section id="enablement-deliverables" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Reusable Outputs</span>Technical Enablement Deliverables</h2>
+        <div class="evidence-grid">
+          <article>
+            <h3>Quick Start Guides</h3>
+            <p>Setup instructions with prerequisites, commands, screenshots, validation checks, and expected working output.</p>
+          </article>
+          <article>
+            <h3>Hands-On Labs</h3>
+            <p>Practical exercises with objectives, starter files, implementation tasks, troubleshooting notes, and review checkpoints.</p>
+          </article>
+          <article>
+            <h3>Handoff Documentation</h3>
+            <p>FAQs, error-resolution notes, workflow diagrams, product walkthroughs, and support-ready knowledge transfer.</p>
+          </article>
+        </div>
+      </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

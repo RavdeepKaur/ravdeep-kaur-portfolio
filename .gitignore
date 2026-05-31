@@ -1,0 +1,12 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editable/private source documents
+*.docx
+
+# Temporary render/export folders
+resume_render/
+resume_pdf_pages/
+

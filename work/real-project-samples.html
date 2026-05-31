@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real Project Samples | Ravdeep Kaur</title>
+    <link rel="stylesheet" href="../styles.css?v=20260531-skills-section-rework">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="../index.html#top">
+          <span>Ravdeep Kaur</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html#portfolio-work">Portfolio Work</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#instructional-practice">Skills</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sample-page">
+      <header class="sample-hero">
+        <p class="eyebrow">Applied Technical Portfolio</p>
+        <h1>Applied Software Project and Training Samples</h1>
+        <p class="lead">
+          Selected professional samples from hands-on technical courses covering database theory, software testing,
+          mobile web, React, React Native, C#, PHP, server-side programming, JavaScript, Java, and algorithms.
+        </p>
+        <div class="sample-hero-meta" aria-label="Portfolio sample categories">
+          <span>Software Projects</span>
+          <span>Database and Full-Stack Labs</span>
+          <span>QA Automation</span>
+        </div>
+      </header>
+
+      <section class="lesson-box scope-card">
+        <div>
+          <p class="eyebrow">Portfolio Scope</p>
+          <h2>Technical Project Evidence and Training Design</h2>
+          <p>
+            These samples represent practical technical materials I created, explained, demonstrated, and supported
+            in classroom and lab environments for software, database, QA, and application-development learning.
+          </p>
+        </div>
+        <div class="scope-points">
+          <span>Hands-on technical demonstrations</span>
+          <span>Project-based learning design</span>
+          <span>Confidential materials and student work excluded</span>
+        </div>
+      </section>
+
+      <div class="technical-layout">
+        <aside class="technical-index" aria-labelledby="technical-areas-title">
+          <p class="eyebrow">Quick Navigation</p>
+          <h2 id="technical-areas-title">Technical Areas Demonstrated</h2>
+          <nav class="concept-grid" aria-label="Technical areas">
+            <a href="#database-theory">Database Design</a>
+            <a href="#sql-normalization">SQL &amp; Normalization</a>
+            <a href="#php-crud-concepts">PHP CRUD</a>
+            <a href="#server-side-programming">Server-Side Programming</a>
+            <a href="#csharp-winforms">C# WinForms</a>
+            <a href="#software-testing">Software Testing</a>
+            <a href="#selenium-concepts">Selenium WebDriver</a>
+            <a href="#mobile-web">Mobile Web</a>
+            <a href="#react-concepts">React Components</a>
+            <a href="#react-native-workflow">React Native Workflow</a>
+            <a href="#react-native-todo">React Native To-Do App</a>
+            <a href="#javascript-ticket-dashboard">JavaScript Events</a>
+            <a href="#java-oop-concepts">Java OOP</a>
+            <a href="#data-structures">Data Structures</a>
+          </nav>
+        </aside>
+
+        <div class="technical-content">
+      <section id="database-case-study" class="technical-area-section">
+        <div class="case-study-header">
+          <p class="eyebrow">Case Study</p>
+          <h2>Inventory and Order Management Database System</h2>
+          <p>
+            A real-world database design and SQL reporting case study for a small retail business that needs to
+            manage customers, products, suppliers, orders, order items, inventory levels, and sales reporting.
+          </p>
+        </div>
+
+        <div class="case-layout">
+          <article>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>
+              Product, supplier, customer, and sales information is stored in disconnected spreadsheets. Staff cannot
+              reliably track stock levels, identify reorder needs, review customer purchases, or generate accurate
+              order and revenue reports.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Solution</h3>
+            <p>
+              Design a normalized relational database with clear entity relationships, then build SQL queries and
+              reporting views that support inventory control, order tracking, supplier management, and sales analysis.
+            </p>
+          </article>
+        </div>
+
+        <div class="area-detail-grid">
+          <article id="database-theory" class="area-detail-card">
+            <p class="eyebrow">Database Theory</p>
+            <h3>Relational Database Design for Business Workflows</h3>
+            <p>
+              This sample demonstrates entities, attributes, primary keys, foreign keys, relationships, cardinality,
+              referential integrity, and business-rule translation from a retail inventory scenario into a formal
+              database model.
+            </p>
+          </article>
+          <article id="sql-normalization" class="area-detail-card">
+            <p class="eyebrow">SQL and Normalization</p>
+            <h3>Normalized Tables, Queries, and Reporting Views</h3>
+            <p>
+              The design separates repeating groups and dependent data into normalized tables, then uses joins,
+              filters, grouping, aggregate functions, and ordered result sets to produce usable operational reports.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="case-subheading">Screenshots and Work Artifacts</h3>
+        <div class="db-screens">
+          <figure class="db-window">
+            <div class="diagram-titlebar">
+              <strong>Lucidchart ER Diagram</strong>
+              <span>RetailInventoryDB logical model</span>
+            </div>
+            <div class="diagram-toolbar">
+              <span>Entities</span>
+              <span>Relationships</span>
+              <span>Primary Keys</span>
+              <span>Foreign Keys</span>
+            </div>
+            <div class="er-board">
+              <div class="er-entity entity-customer">
+                <h3>Customer</h3>
+                <p>PK CustomerID</p>
+                <p>Name</p>
+                <p>Email</p>
+              </div>
+              <div class="er-entity entity-order">
+                <h3>Order</h3>
+                <p>PK OrderID</p>
+                <p>FK CustomerID</p>
+                <p>OrderDate</p>
+              </div>
+              <div class="er-entity entity-item">
+                <h3>OrderItem</h3>
+                <p>PK OrderItemID</p>
+                <p>FK OrderID</p>
+                <p>FK ProductID</p>
+                <p>Quantity</p>
+              </div>
+              <div class="er-entity entity-product">
+                <h3>Product</h3>
+                <p>PK ProductID</p>
+                <p>FK SupplierID</p>
+                <p>UnitPrice</p>
+                <p>StockQty</p>
+              </div>
+              <div class="er-entity entity-supplier">
+                <h3>Supplier</h3>
+                <p>PK SupplierID</p>
+                <p>SupplierName</p>
+                <p>ContactEmail</p>
+              </div>
+              <div class="er-line line-customer-order"></div>
+              <div class="er-line line-order-item"></div>
+              <div class="er-line line-item-product"></div>
+              <div class="er-line line-product-supplier"></div>
+            </div>
+            <figcaption>ER diagram showing customers placing orders, orders containing products, and products supplied by vendors.</figcaption>
+          </figure>
+
+          <figure class="db-window">
+            <div class="diagram-titlebar">
+              <strong>Normalization Design Document</strong>
+              <span>1NF to 3NF relational structure</span>
+            </div>
+            <div class="diagram-toolbar">
+              <span>1NF</span>
+              <span>2NF</span>
+              <span>3NF</span>
+              <span>Relational Schema</span>
+            </div>
+            <div class="schema-board retail-schema">
+              <div class="schema-table">
+                <h3>Customer</h3>
+                <p>PK CustomerID</p>
+                <p>CustomerName</p>
+                <p>Email</p>
+              </div>
+              <div class="schema-link">1 : M</div>
+              <div class="schema-table">
+                <h3>SalesOrder</h3>
+                <p>PK OrderID</p>
+                <p>FK CustomerID</p>
+                <p>OrderDate</p>
+              </div>
+              <div class="schema-link">M : 1</div>
+              <div class="schema-table">
+                <h3>OrderItem</h3>
+                <p>PK OrderItemID</p>
+                <p>FK OrderID</p>
+                <p>FK ProductID</p>
+                <p>Quantity</p>
+              </div>
+              <div class="schema-table">
+                <h3>Product</h3>
+                <p>PK ProductID</p>
+                <p>FK SupplierID</p>
+                <p>StockQty</p>
+              </div>
+            </div>
+            <div class="normalization-strip">
+              <article>
+                <h3>1NF</h3>
+                <p>Remove repeating product columns from order records.</p>
+              </article>
+              <article>
+                <h3>2NF</h3>
+                <p>Move product and supplier details into separate tables.</p>
+              </article>
+              <article>
+                <h3>3NF</h3>
+                <p>Store supplier contact data only once and reference it by key.</p>
+              </article>
+            </div>
+            <figcaption>Normalization separates customers, orders, products, suppliers, and order line items.</figcaption>
+          </figure>
+
+          <figure class="db-window">
+            <div class="ssms-titlebar">
+              <strong>SQL Server Management Studio</strong>
+              <span>Query Results - Low Stock Report</span>
+            </div>
+            <div class="ssms-toolbar">
+              <span>RetailInventoryDB</span>
+              <span>Execute</span>
+              <span>Results</span>
+              <span>Messages</span>
+            </div>
+            <div class="software-view">
+              <div class="query-editor">
+                <div class="editor-line"><span>1</span><code>SELECT p.ProductName, s.SupplierName, p.StockQty, p.ReorderLevel,</code></div>
+                <div class="editor-line"><span>2</span><code>       (p.ReorderLevel - p.StockQty) AS UnitsToReorder</code></div>
+                <div class="editor-line"><span>3</span><code>FROM Product p INNER JOIN Supplier s ON p.SupplierID = s.SupplierID</code></div>
+                <div class="editor-line"><span>4</span><code>WHERE p.StockQty &lt;= p.ReorderLevel</code></div>
+                <div class="editor-line"><span>5</span><code>ORDER BY UnitsToReorder DESC;</code></div>
+              </div>
+              <div class="ssms-tabs">
+                <span class="active">Results</span>
+                <span>Messages</span>
+              </div>
+              <table class="result-table ssms-grid">
+                <thead>
+                  <tr><th></th><th>ProductName</th><th>SupplierName</th><th>StockQty</th><th>ReorderLevel</th><th>UnitsToReorder</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>HD Webcam</td><td>VisionSource</td><td>6</td><td>15</td><td>9</td></tr>
+                  <tr><td>2</td><td>Wireless Keyboard</td><td>NorthTech Supply</td><td>8</td><td>15</td><td>7</td></tr>
+                  <tr><td>3</td><td>USB-C Dock</td><td>Metro Devices</td><td>10</td><td>12</td><td>2</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <figcaption>SQL Server Management Studio-style query execution and result grid for low-stock inventory reporting.</figcaption>
+          </figure>
+        </div>
+
+        <h3 class="case-subheading">Implementation Example</h3>
+        <pre><code>-- Objective: identify products that need restocking and show supplier details.
+-- Skills demonstrated: normalization, joins, calculated fields, filtering, and reporting logic.
+
+SELECT
+  p.ProductName,
+  s.SupplierName,
+  p.StockQty,
+  p.ReorderLevel,
+  (p.ReorderLevel - p.StockQty) AS UnitsToReorder
+FROM Product p
+INNER JOIN Supplier s
+  ON p.SupplierID = s.SupplierID
+WHERE p.StockQty &lt;= p.ReorderLevel
+ORDER BY UnitsToReorder DESC;</code></pre>
+
+        <h3 class="case-subheading">Outcome</h3>
+        <div class="evidence-grid">
+          <article>
+            <h3>Database Design</h3>
+            <p>Applies entities, relationships, primary keys, foreign keys, constraints, and normalization.</p>
+          </article>
+          <article>
+            <h3>SQL Reporting</h3>
+            <p>Uses joins, aggregation, grouping, aliases, filtering, and ordered result sets.</p>
+          </article>
+          <article>
+            <h3>Business Thinking</h3>
+            <p>Connects database structure to inventory control, order fulfillment, supplier communication, and sales reporting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="php-crud" class="technical-area-section">
+        <div class="case-study-header">
+          <p class="eyebrow">PHP Case Study</p>
+          <h2>Database CRUD Application Using PHP Data Objects</h2>
+          <p>
+            A server-side application sample showing how PHP can connect to a relational database, manage records,
+            and perform secure CRUD operations using PDO prepared statements.
+          </p>
+        </div>
+
+        <div class="case-layout">
+          <article>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>
+              A small operations team needs a browser-based way to add, view, edit, search, and remove customer
+              records without manually changing database tables or exposing raw SQL to end users.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Solution</h3>
+            <p>
+              Build a PHP CRUD module backed by PDO. Use a shared database connection, prepared statements,
+              validation checks, and separate create/read/update/delete actions for maintainable server-side code.
+            </p>
+          </article>
+        </div>
+
+        <div class="area-detail-grid">
+          <article id="php-crud-concepts" class="area-detail-card">
+            <p class="eyebrow">PHP CRUD</p>
+            <h3>Create, Read, Update, and Delete Operations</h3>
+            <p>
+              This sample shows a practical CRUD workflow for managing customer records through a browser interface,
+              including form input, record search, edit actions, delete actions, and refreshed table output.
+            </p>
+          </article>
+          <article id="server-side-programming" class="area-detail-card">
+            <p class="eyebrow">Server-Side Programming</p>
+            <h3>PDO, Prepared Statements, and Request Handling</h3>
+            <p>
+              The server-side layer uses PHP Data Objects, reusable connection logic, prepared SQL statements,
+              validation checks, and separated functions so database operations remain secure and maintainable.
+            </p>
+          </article>
+        </div>
+
+        <div class="db-window">
+          <div class="diagram-titlebar">
+            <strong>Browser Output View</strong>
+            <span>customers.php</span>
+          </div>
+          <div class="php-app-view">
+            <div class="php-app-header">
+              <div>
+                <strong>Customer Records</strong>
+                <p>PDO CRUD administration screen</p>
+              </div>
+              <button>+ Add Customer</button>
+            </div>
+            <div class="php-search-row">
+              <span>Search by name or email</span>
+              <button>Search</button>
+            </div>
+            <table class="result-table">
+              <thead>
+                <tr><th>ID</th><th>Name</th><th>Email</th><th>Status</th><th>Actions</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>101</td><td>Ravdeep Kaur</td><td>ravdeep27@gmail.com</td><td>Active</td><td>Edit | Delete</td></tr>
+                <tr><td>102</td><td>Codie Peterson</td><td>codie.peterson@example.com</td><td>Active</td><td>Edit | Delete</td></tr>
+                <tr><td>103</td><td>Andrew</td><td>andrew@example.com</td><td>Inactive</td><td>Edit | Delete</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption>Admin-style CRUD screen for searching records and managing database rows through PHP.</figcaption>
+        </div>
+
+        <pre><code>&lt;?php
+// db.php
+// Creates one reusable PDO connection for the application.
+// ERRMODE_EXCEPTION makes database errors easier to catch and debug.
+$dsn = "mysql:host=localhost;dbname=training_app;charset=utf8mb4";
+$pdo = new PDO($dsn, "app_user", "strong_password", [
+  PDO::ATTR_ERRMODE =&gt; PDO::ERRMODE_EXCEPTION,
+  PDO::ATTR_DEFAULT_FETCH_MODE =&gt; PDO::FETCH_ASSOC
+]);
+
+// CREATE: insert a new customer record with named placeholders.
+function createCustomer(PDO $pdo, string $name, string $email): bool {
+  $sql = "INSERT INTO customers (name, email, status)
+          VALUES (:name, :email, 'Active')";
+
+  $stmt = $pdo-&gt;prepare($sql);
+  return $stmt-&gt;execute([
+    ":name" =&gt; trim($name),
+    ":email" =&gt; trim($email)
+  ]);
+}
+
+// READ: retrieve all customers for the admin table.
+function getCustomers(PDO $pdo): array {
+  $stmt = $pdo-&gt;query(
+    "SELECT customer_id, name, email, status
+     FROM customers
+     ORDER BY customer_id DESC"
+  );
+
+  return $stmt-&gt;fetchAll();
+}
+
+// UPDATE: edit a customer by primary key.
+function updateCustomer(PDO $pdo, int $id, string $name, string $email): bool {
+  $sql = "UPDATE customers
+          SET name = :name, email = :email
+          WHERE customer_id = :id";
+
+  $stmt = $pdo-&gt;prepare($sql);
+  return $stmt-&gt;execute([
+    ":id" =&gt; $id,
+    ":name" =&gt; trim($name),
+    ":email" =&gt; trim($email)
+  ]);
+}
+
+// DELETE: remove one customer by primary key.
+function deleteCustomer(PDO $pdo, int $id): bool {
+  $stmt = $pdo-&gt;prepare(
+    "DELETE FROM customers WHERE customer_id = :id"
+  );
+
+  return $stmt-&gt;execute([":id" =&gt; $id]);
+}
+?&gt;</code></pre>
+
+        <div class="evidence-grid">
+          <article>
+            <h3>Secure Database Access</h3>
+            <p>Uses PDO, named placeholders, prepared statements, and exception-based error handling.</p>
+          </article>
+          <article>
+            <h3>CRUD Workflow</h3>
+            <p>Covers create, read, update, delete, search-oriented display, and record management actions.</p>
+          </article>
+          <article>
+            <h3>Server-Side Concepts</h3>
+            <p>Connects forms, request handling, validation, database operations, and dynamic page output.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="csharp-winforms" class="technical-area-section">
+        <div class="case-study-header">
+          <p class="eyebrow">C# Case Study</p>
+          <h2>Windows Forms Customer Management System</h2>
+          <p>
+            A desktop application workflow using C#, Windows Forms, SQL Server LocalDB, validation, parameterized
+            queries, multi-form navigation, edit actions, and DataGridView output for managing customer records.
+          </p>
+        </div>
+
+        <div class="case-layout">
+          <article>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>
+              A small service team needs a desktop tool to log in, view customer records, add new customers, edit
+              contact details, and search active accounts without directly opening the database.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Solution</h3>
+            <p>
+              Build a WinForms application with separate login and dashboard forms, centralized database access,
+              input validation, parameterized SQL commands, exception handling, and grid-based record display with
+              row-level edit actions.
+            </p>
+          </article>
+        </div>
+
+        <div class="desktop-app-window">
+          <div class="desktop-titlebar">
+            <strong>CustomerManager - Windows Forms</strong>
+            <span>SQL Server LocalDB connected</span>
+          </div>
+          <div class="desktop-body">
+            <aside>
+              <strong>Navigation</strong>
+              <span class="active">Customers</span>
+              <span>Orders</span>
+              <span>Reports</span>
+              <span>Settings</span>
+            </aside>
+            <main>
+              <div class="desktop-toolbar">
+                <div>
+                  <h3>Customer Records</h3>
+                  <p>Search, add, edit, and review account status.</p>
+                </div>
+                <button>Add Customer</button>
+              </div>
+              <div class="desktop-form-row">
+                <span>Search customer name</span>
+                <button>Search</button>
+              </div>
+              <table class="result-table">
+                <thead>
+                  <tr><th>CustomerID</th><th>Name</th><th>City</th><th>Status</th><th>LastUpdated</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>501</td><td>Ravdeep Kaur</td><td>Hamilton</td><td>Active</td><td>2025-05-30</td><td><button class="table-action">Edit</button></td></tr>
+                  <tr><td>502</td><td>Codie Peterson</td><td>Toronto</td><td>Active</td><td>2024-08-14</td><td><button class="table-action">Edit</button></td></tr>
+                  <tr><td>503</td><td>Andrew</td><td>Mississauga</td><td>Review</td><td>2023-11-02</td><td><button class="table-action">Edit</button></td></tr>
+                </tbody>
+              </table>
+            </main>
+          </div>
+        </div>
+
+        <pre><code>using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+public partial class CustomerDashboard : Form
+{
+    private readonly string connectionString =
+        @"Data Source=(LocalDB)\MSSQLLocalDB;
+          AttachDbFilename=|DataDirectory|\CustomerManager.mdf;
+          Integrated Security=True";
+
+    public CustomerDashboard()
+    {
+        InitializeComponent();
+        ConfigureGrid();
+        LoadCustomers();
+    }
+
+    // Adds an Edit button column so each record can open the update workflow.
+    private void ConfigureGrid()
+    {
+        DataGridViewButtonColumn editColumn = new DataGridViewButtonColumn();
+        editColumn.Name = "EditAction";
+        editColumn.HeaderText = "Action";
+        editColumn.Text = "Edit";
+        editColumn.UseColumnTextForButtonValue = true;
+        customersGrid.Columns.Add(editColumn);
+    }
+
+    // Centralized read operation: retrieves records and binds them to DataGridView.
+    private void LoadCustomers()
+    {
+        using SqlConnection connection = new SqlConnection(connectionString);
+        using SqlDataAdapter adapter = new SqlDataAdapter(
+            "SELECT CustomerID, FullName, City, Status, LastUpdated FROM Customers",
+            connection
+        );
+
+        DataTable table = new DataTable();
+        adapter.Fill(table);
+        customersGrid.DataSource = table;
+    }
+
+    // Validation keeps incomplete data from reaching the database layer.
+    private bool ValidateCustomerForm()
+    {
+        return !string.IsNullOrWhiteSpace(nameTextBox.Text) &&
+               !string.IsNullOrWhiteSpace(cityTextBox.Text) &&
+               statusComboBox.SelectedItem != null;
+    }
+
+    // CREATE operation using a parameterized query to avoid SQL injection.
+    private void saveButton_Click(object sender, EventArgs e)
+    {
+        if (!ValidateCustomerForm())
+        {
+            MessageBox.Show("Please complete all required fields.");
+            return;
+        }
+
+        string sql = @"INSERT INTO Customers (FullName, City, Status, LastUpdated)
+                       VALUES (@name, @city, @status, @updated)";
+
+        try
+        {
+            using SqlConnection connection = new SqlConnection(connectionString);
+            using SqlCommand command = new SqlCommand(sql, connection);
+
+            command.Parameters.AddWithValue("@name", nameTextBox.Text.Trim());
+            command.Parameters.AddWithValue("@city", cityTextBox.Text.Trim());
+            command.Parameters.AddWithValue("@status", statusComboBox.Text);
+            command.Parameters.AddWithValue("@updated", DateTime.Today);
+
+            connection.Open();
+            command.ExecuteNonQuery();
+            LoadCustomers();
+            MessageBox.Show("Customer saved successfully.");
+        }
+        catch (SqlException ex)
+        {
+            MessageBox.Show("Database error: " + ex.Message);
+        }
+    }
+
+    // UPDATE operation: saves edits for the selected customer record.
+    private void updateButton_Click(object sender, EventArgs e)
+    {
+        if (customersGrid.CurrentRow == null || !ValidateCustomerForm())
+        {
+            MessageBox.Show("Select a customer and complete all required fields.");
+            return;
+        }
+
+        int customerId = Convert.ToInt32(
+            customersGrid.CurrentRow.Cells["CustomerID"].Value
+        );
+
+        string sql = @"UPDATE Customers
+                       SET FullName = @name,
+                           City = @city,
+                           Status = @status,
+                           LastUpdated = @updated
+                       WHERE CustomerID = @id";
+
+        using SqlConnection connection = new SqlConnection(connectionString);
+        using SqlCommand command = new SqlCommand(sql, connection);
+
+        command.Parameters.AddWithValue("@id", customerId);
+        command.Parameters.AddWithValue("@name", nameTextBox.Text.Trim());
+        command.Parameters.AddWithValue("@city", cityTextBox.Text.Trim());
+        command.Parameters.AddWithValue("@status", statusComboBox.Text);
+        command.Parameters.AddWithValue("@updated", DateTime.Today);
+
+        connection.Open();
+        command.ExecuteNonQuery();
+        LoadCustomers();
+        MessageBox.Show("Customer updated successfully.");
+    }
+}</code></pre>
+
+        <div class="evidence-grid">
+          <article>
+            <h3>Desktop UI Workflow</h3>
+            <p>Uses multi-form navigation, input fields, combo boxes, buttons, DataGridView edit actions, and user feedback messages.</p>
+          </article>
+          <article>
+            <h3>Database Integration</h3>
+            <p>Connects WinForms to SQL Server LocalDB with read, insert, and update operations using ADO.NET.</p>
+          </article>
+          <article>
+            <h3>Professional Practices</h3>
+            <p>Includes validation, parameterized SQL, exception handling, and structured database access logic.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="selenium-qa" class="technical-area-section">
+        <div class="case-study-header">
+          <p class="eyebrow">QA Automation Case Study</p>
+          <h2>Selenium WebDriver Link Validation Automation</h2>
+          <p>
+            A Java-based Selenium WebDriver sample that opens a web page, collects anchor elements, checks link text
+            and URLs, identifies missing or duplicate links, and produces a readable QA report for release review.
+          </p>
+        </div>
+
+        <div class="case-layout">
+          <article>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>
+              A public web page can contain navigation links, footer links, external resources, and empty anchors.
+              Before publishing updates, the QA process needs a repeatable way to inspect links and flag issues that
+              may affect user navigation or professional credibility.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Solution</h3>
+            <p>
+              Build a Selenium WebDriver script in Java using IntelliJ IDEA, ChromeDriver, ChromeOptions, reusable
+              helper methods, and console reporting. The same structure can be extended to HTTP status validation for
+              broken-link testing.
+            </p>
+          </article>
+        </div>
+
+        <div class="area-detail-grid">
+          <article id="software-testing" class="area-detail-card">
+            <p class="eyebrow">Software Testing</p>
+            <h3>Release Readiness and Link Quality Review</h3>
+            <p>
+              This sample frames testing as a repeatable quality process: identify page elements, define expected
+              behaviour, inspect output, document risk, and report issues that may affect navigation or user trust.
+            </p>
+          </article>
+          <article id="selenium-concepts" class="area-detail-card">
+            <p class="eyebrow">Selenium Concepts</p>
+            <h3>WebDriver Automation With Java and ChromeDriver</h3>
+            <p>
+              The automation flow uses Selenium WebDriver, ChromeOptions, element locators, anchor-tag collection,
+              reusable helper methods, console reporting, and extension points for HTTP status-code validation.
+            </p>
+          </article>
+        </div>
+
+        <div class="qa-automation-window">
+          <div class="qa-titlebar">
+            <strong>IntelliJ IDEA - LinkAuditTest.java</strong>
+            <span>Selenium WebDriver / Java</span>
+          </div>
+          <div class="qa-workspace">
+            <aside>
+              <strong>Project</strong>
+              <span>src</span>
+              <span class="active">LinkAuditTest.java</span>
+              <span>chromedriver.exe</span>
+              <span>selenium-server.jar</span>
+            </aside>
+            <main>
+              <div class="qa-editor">
+                <div><span>01</span><code>WebDriver driver = setupDriver();</code></div>
+                <div><span>02</span><code>driver.get("https://www.selenium.dev/");</code></div>
+                <div><span>03</span><code>List&lt;WebElement&gt; links = driver.findElements(By.tagName("a"));</code></div>
+                <div><span>04</span><code>printLinkReport(links);</code></div>
+              </div>
+              <div class="qa-console">
+                <strong>Run Output</strong>
+                <p>Page tested: https://www.selenium.dev/</p>
+                <p>Total links found: 42</p>
+                <p>Valid link labels: 39</p>
+                <p>Empty or missing link labels: 2</p>
+                <p>Duplicate URLs requiring review: 1</p>
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <pre><code>import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class LinkAuditTest {
+
+    private static final String DRIVER_PATH =
+            "C:\\SeleniumTools\\ChromeDriver\\chromedriver.exe";
+
+    public static void main(String[] args) {
+        WebDriver driver = setupDriver();
+
+        try {
+            driver.get("https://www.selenium.dev/");
+            List&lt;WebElement&gt; links = driver.findElements(By.tagName("a"));
+            printLinkReport(driver.getCurrentUrl(), links);
+        } finally {
+            driver.quit();
+        }
+    }
+
+    // Configures ChromeDriver for a local Selenium WebDriver run.
+    private static WebDriver setupDriver() {
+        System.setProperty("webdriver.chrome.driver", DRIVER_PATH);
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
+        WebDriver driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
+        return driver;
+    }
+
+    // Reviews page links and reports missing labels, missing URLs, and duplicates.
+    private static void printLinkReport(String pageUrl, List&lt;WebElement&gt; links) {
+        int emptyLabels = 0;
+        int missingUrls = 0;
+        int duplicateUrls = 0;
+        Set&lt;String&gt; uniqueUrls = new HashSet&lt;&gt;();
+
+        System.out.println("Page tested: " + pageUrl);
+        System.out.println("Total links found: " + links.size());
+
+        for (WebElement link : links) {
+            String label = link.getText().trim();
+            String href = link.getAttribute("href");
+
+            if (label.isEmpty()) {
+                emptyLabels++;
+            }
+
+            if (href == null || href.isBlank()) {
+                missingUrls++;
+                continue;
+            }
+
+            if (!uniqueUrls.add(href)) {
+                duplicateUrls++;
+            }
+        }
+
+        System.out.println("Valid link URLs: " + uniqueUrls.size());
+        System.out.println("Empty or missing link labels: " + emptyLabels);
+        System.out.println("Missing URLs: " + missingUrls);
+        System.out.println("Duplicate URLs requiring review: " + duplicateUrls);
+    }
+}</code></pre>
+
+        <div class="evidence-grid">
+          <article>
+            <h3>Automation Setup</h3>
+            <p>Shows Selenium Server, ChromeDriver configuration, IntelliJ project setup, and browser compatibility awareness.</p>
+          </article>
+          <article>
+            <h3>QA Validation</h3>
+            <p>Checks anchor elements, link labels, URL availability, duplicate references, and release-readiness concerns.</p>
+          </article>
+          <article>
+            <h3>Professional Extension</h3>
+            <p>Can be expanded with HTTP response-code validation, CSV reporting, regression runs, and CI pipeline execution.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="react-mobile-web" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>React / Mobile Web</span>React and Mobile Web Concepts</h2>
+        <p>
+          Mobile web and React lessons focused on component-based thinking, state, props, responsive layout, JSON data,
+          API-style workflows, rendering lists, forms, and debugging UI behavior. I can explain these concepts to new
+          developers, non-technical stakeholders, and support teams in a clear, job-ready way.
+        </p>
+        <div class="area-detail-grid">
+          <article id="mobile-web" class="area-detail-card">
+            <p class="eyebrow">Mobile Web</p>
+            <h3>Responsive Interfaces and Browser-Based Workflows</h3>
+            <p>
+              This area covers responsive layouts, mobile-friendly content structure, form behaviour, browser testing,
+              media handling, and UI decisions that support users across screen sizes.
+            </p>
+          </article>
+          <article id="react-concepts" class="area-detail-card">
+            <p class="eyebrow">React</p>
+            <h3>Component-Based UI and Reusable Frontend Patterns</h3>
+            <p>
+              React examples focus on components, props, state, list rendering, conditional output, reusable cards,
+              and translating JavaScript fundamentals into maintainable frontend interfaces.
+            </p>
+          </article>
+        </div>
+        <pre><code>function CourseCard({ title, technology, level }) {
+  return (
+    &lt;article className="course-card"&gt;
+      &lt;h3&gt;{title}&lt;/h3&gt;
+      &lt;p&gt;Technology: {technology}&lt;/p&gt;
+      &lt;p&gt;Level: {level}&lt;/p&gt;
+    &lt;/article&gt;
+  );
+}
+
+// Training focus:
+// components, props, reusable UI, list rendering, and responsive layout.</code></pre>
+      </section>
+
+      <section id="react-native-workflow" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>React Native</span>React Native Environment and Mobile App Workflow</h2>
+        <p>
+          React Native instruction covered setup, emulator readiness, project run commands, mobile UI components,
+          troubleshooting build errors, and connecting concepts from web development into native mobile application
+          workflows.
+        </p>
+        <pre><code>import React from "react";
+import { SafeAreaView, Text, Button } from "react-native";
+
+export default function App() {
+  return (
+    &lt;SafeAreaView&gt;
+      &lt;Text&gt;Welcome to Mobile App Development&lt;/Text&gt;
+      &lt;Button title="Start Lab" onPress={() =&gt; console.log("Lab started")} /&gt;
+    &lt;/SafeAreaView&gt;
+  );
+}
+
+// Learner focus:
+// component structure, mobile controls, event handling, emulator testing.</code></pre>
+      </section>
+
+      <section id="react-native-todo" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Mobile App Project</span>React Native To-Do List App</h2>
+        <p>
+          This mobile app project was designed as a practical React Native exercise for demonstrating state management,
+          text input, list rendering, touch events, conditional styling, and simple CRUD-style interaction in a
+          mobile interface.
+        </p>
+
+        <div class="app-showcase" aria-label="React Native To-Do List App screen previews">
+          <figure class="phone-preview">
+            <div class="phone-screen">
+              <div class="phone-speaker"></div>
+              <div class="phone-status">
+                <span>9:41</span>
+                <span class="status-icons">LTE | 100%</span>
+              </div>
+              <div class="app-header">
+                <small>React Native</small>
+                <h3>My Tasks</h3>
+                <p>3 tasks planned</p>
+              </div>
+              <div class="todo-input-row">
+                <span>Add a new task</span>
+                <strong aria-label="Add task">+</strong>
+              </div>
+              <ul class="todo-preview-list">
+                <li><span class="task-icon"></span><p>Review JavaScript notes</p><em>Delete</em></li>
+                <li><span class="task-icon"></span><p>Build React Native UI</p><em>Delete</em></li>
+                <li><span class="task-icon"></span><p>Test delete button</p><em>Delete</em></li>
+              </ul>
+            </div>
+            <figcaption>Task entry and list display screen.</figcaption>
+          </figure>
+
+          <figure class="phone-preview">
+            <div class="phone-screen">
+              <div class="phone-speaker"></div>
+              <div class="phone-status">
+                <span>9:42</span>
+                <span class="status-icons">LTE | 100%</span>
+              </div>
+              <div class="app-header">
+                <small>React Native</small>
+                <h3>My Tasks</h3>
+                <p>1 completed today</p>
+              </div>
+              <div class="todo-input-row">
+                <span>Prepare lab demo</span>
+                <strong aria-label="Add task">+</strong>
+              </div>
+              <ul class="todo-preview-list">
+                <li class="done"><span class="task-icon"></span><p>Review JavaScript notes</p><em>Delete</em></li>
+                <li><span class="task-icon"></span><p>Build React Native UI</p><em>Delete</em></li>
+                <li><span class="task-icon"></span><p>Prepare lab demo</p><em>Delete</em></li>
+              </ul>
+            </div>
+            <figcaption>Completed-task styling and updated task list.</figcaption>
+          </figure>
+        </div>
+
+        <pre><code>import React, { useState } from "react";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  FlatList,
+  StyleSheet
+} from "react-native";
+
+export default function TodoApp() {
+  // Stores the current value typed into the task input.
+  const [task, setTask] = useState("");
+
+  // Stores the list of task objects displayed in the FlatList.
+  // Each task has an id, visible text, and completion status.
+  const [tasks, setTasks] = useState([
+    { id: "1", text: "Review JavaScript notes", done: false },
+    { id: "2", text: "Build React Native UI", done: false }
+  ]);
+
+  // Adds a new task only when the input contains meaningful text.
+  // Date.now() creates a simple unique id for classroom/demo use.
+  function addTask() {
+    if (!task.trim()) return;
+    setTasks([...tasks, { id: Date.now().toString(), text: task, done: false }]);
+    setTask("");
+  }
+
+  // Toggles one task between active and completed.
+  // map() returns a new array so React can re-render the changed state.
+  function toggleTask(id) {
+    setTasks(tasks.map(item =>
+      item.id === id ? { ...item, done: !item.done } : item
+    ));
+  }
+
+  // Removes one task from the list by filtering it out by id.
+  function deleteTask(id) {
+    setTasks(tasks.filter(item => item.id !== id));
+  }
+
+  return (
+    &lt;SafeAreaView style={styles.container}&gt;
+      &lt;Text style={styles.title}&gt;To-Do List&lt;/Text&gt;
+
+      &lt;View style={styles.inputRow}&gt;
+        &lt;TextInput
+          value={task}
+          onChangeText={setTask}
+          placeholder="Add a new task"
+          style={styles.input}
+        /&gt;
+        &lt;TouchableOpacity onPress={addTask} style={styles.addButton}&gt;
+          &lt;Text style={styles.addText}&gt;+&lt;/Text&gt;
+        &lt;/TouchableOpacity&gt;
+      &lt;/View&gt;
+
+      &lt;FlatList
+        data={tasks}
+        keyExtractor={item =&gt; item.id}
+        // renderItem controls the layout and behavior for each task row.
+        renderItem={({ item }) =&gt; (
+          &lt;View style={styles.taskRow}&gt;
+            &lt;TouchableOpacity onPress={() =&gt; toggleTask(item.id)}&gt;
+              &lt;Text style={item.done ? styles.doneTask : styles.taskText}&gt;
+                {item.text}
+              &lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+            &lt;TouchableOpacity onPress={() =&gt; deleteTask(item.id)}&gt;
+              &lt;Text style={styles.deleteText}&gt;Delete&lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+          &lt;/View&gt;
+        )}
+      /&gt;
+    &lt;/SafeAreaView&gt;
+  );
+}</code></pre>
+
+        <div class="evidence-grid">
+          <article>
+            <h3>React Native Skills</h3>
+            <p>Uses components, state, props-style data flow, touch events, TextInput, FlatList, and StyleSheet.</p>
+          </article>
+          <article>
+            <h3>App Behavior</h3>
+            <p>Supports adding tasks, rendering task lists, marking tasks complete, deleting tasks, and clearing input.</p>
+          </article>
+          <article>
+            <h3>Professional Application</h3>
+            <p>Connects JavaScript fundamentals to practical mobile app development and structured lab delivery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="javascript-ticket-dashboard" class="technical-area-section">
+        <div class="case-study-header">
+          <p class="eyebrow">JavaScript Frontend Case Study</p>
+          <h2>Interactive Support Ticket Triage Dashboard</h2>
+          <p>
+            A browser-based interface that uses modern JavaScript event handling to filter tickets, update status,
+            validate user actions, and refresh dashboard totals without reloading the page.
+          </p>
+        </div>
+
+        <div class="case-layout">
+          <article>
+            <span>01</span>
+            <h3>Problem</h3>
+            <p>
+              A support team needs a lightweight dashboard to review incoming technical issues, prioritize urgent
+              items, assign resolution status, and keep summary counts accurate while agents work through a queue.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Solution</h3>
+            <p>
+              Build a JavaScript-driven ticket board using delegated click events, change events, input validation,
+              array-based state management, DOM rendering, and calculated dashboard metrics.
+            </p>
+          </article>
+        </div>
+
+        <div class="ticket-dashboard" id="ticketDashboard" data-ticket-dashboard>
+          <div class="ticket-toolbar">
+            <div>
+              <h3>Technical Support Queue</h3>
+              <p>Filter, prioritize, and update issue status from one interface.</p>
+            </div>
+            <div class="ticket-metrics" data-ticket-metrics>
+              <span><strong>8</strong> Open</span>
+              <span><strong>3</strong> High Priority</span>
+              <span><strong>92%</strong> SLA</span>
+            </div>
+          </div>
+          <div class="ticket-filters" data-ticket-filters>
+            <button class="is-active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="open">Open</button>
+            <button type="button" data-filter="in-progress">In Progress</button>
+            <button type="button" data-filter="resolved">Resolved</button>
+          </div>
+          <div class="ticket-list" data-ticket-list>
+            <article data-ticket-id="101">
+              <span class="priority high">High</span>
+              <div>
+                <h4>Login form fails after password reset</h4>
+                <p>Authentication workflow · Reported by customer education team</p>
+              </div>
+              <select aria-label="Ticket status" data-status>
+                <option>Open</option>
+                <option selected>In Progress</option>
+                <option>Resolved</option>
+              </select>
+              <button type="button" data-assign>Assign</button>
+            </article>
+            <article data-ticket-id="102">
+              <span class="priority medium">Medium</span>
+              <div>
+                <h4>Training portal video does not load on mobile</h4>
+                <p>Responsive media issue · Requires browser verification</p>
+              </div>
+              <select aria-label="Ticket status" data-status>
+                <option selected>Open</option>
+                <option>In Progress</option>
+                <option>Resolved</option>
+              </select>
+              <button type="button" data-assign>Assign</button>
+            </article>
+            <article data-ticket-id="103">
+              <span class="priority low">Low</span>
+              <div>
+                <h4>Update onboarding guide link text</h4>
+                <p>Documentation cleanup · Low-risk release task</p>
+              </div>
+              <select aria-label="Ticket status" data-status>
+                <option>Open</option>
+                <option>In Progress</option>
+                <option selected>Resolved</option>
+              </select>
+              <button type="button" data-assign>Assign</button>
+            </article>
+          </div>
+        </div>
+        <pre><code>const tickets = [
+  { id: 101, title: "Login form fails after password reset", priority: "high", status: "in-progress" },
+  { id: 102, title: "Training portal video does not load on mobile", priority: "medium", status: "open" },
+  { id: 103, title: "Update onboarding guide link text", priority: "low", status: "resolved" }
+];
+
+let activeFilter = "all";
+
+const dashboard = document.querySelector("[data-ticket-dashboard]");
+const list = dashboard.querySelector("[data-ticket-list]");
+const filters = dashboard.querySelector("[data-ticket-filters]");
+const metrics = dashboard.querySelector("[data-ticket-metrics]");
+
+// Event delegation keeps the dashboard maintainable as ticket rows change.
+filters.addEventListener("click", (event) =&gt; {
+  const button = event.target.closest("button[data-filter]");
+  if (!button) return;
+
+  activeFilter = button.dataset.filter;
+  renderDashboard();
+});
+
+list.addEventListener("change", (event) =&gt; {
+  if (!event.target.matches("select[data-status]")) return;
+
+  const ticketId = Number(event.target.closest("[data-ticket-id]").dataset.ticketId);
+  const ticket = tickets.find((item) =&gt; item.id === ticketId);
+  ticket.status = event.target.value;
+
+  renderDashboard();
+});
+
+list.addEventListener("click", (event) =&gt; {
+  const assignButton = event.target.closest("button[data-assign]");
+  if (!assignButton) return;
+
+  const row = assignButton.closest("[data-ticket-id]");
+  const status = row.querySelector("[data-status]").value;
+
+  if (status === "resolved") {
+    assignButton.textContent = "Closed";
+    assignButton.disabled = true;
+    return;
+  }
+
+  assignButton.textContent = "Assigned";
+  row.classList.add("is-assigned");
+});
+
+function getVisibleTickets() {
+  return activeFilter === "all"
+    ? tickets
+    : tickets.filter((ticket) =&gt; ticket.status === activeFilter);
+}
+
+function updateMetrics() {
+  const openCount = tickets.filter((ticket) =&gt; ticket.status !== "resolved").length;
+  const highCount = tickets.filter((ticket) =&gt; ticket.priority === "high").length;
+
+  metrics.innerHTML = `
+    &lt;span&gt;&lt;strong&gt;${openCount}&lt;/strong&gt; Open&lt;/span&gt;
+    &lt;span&gt;&lt;strong&gt;${highCount}&lt;/strong&gt; High Priority&lt;/span&gt;
+    &lt;span&gt;&lt;strong&gt;92%&lt;/strong&gt; SLA&lt;/span&gt;
+  `;
+}</code></pre>
+
+        <div class="evidence-grid">
+          <article>
+            <h3>Frontend Logic</h3>
+            <p>Demonstrates state arrays, reusable rendering functions, calculated metrics, and DOM updates.</p>
+          </article>
+          <article>
+            <h3>Event Handling</h3>
+            <p>Uses delegated click events, select change events, validation, and conditional UI messages.</p>
+          </article>
+          <article>
+            <h3>Workplace Relevance</h3>
+            <p>Connects JavaScript fundamentals to support tools, dashboards, admin panels, and workflow interfaces.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="java-oop" class="technical-area-section">
+        <h2 class="technical-area-heading"><span>Java / Computer Science</span>Java OOP and Data Structures</h2>
+        <p>
+          Java examples were used to teach object-oriented programming, constructors, methods, object state, arrays,
+          recursion, sorting, and debugging. These samples show the ability to explain abstract computer science
+          concepts in concrete, step-by-step ways.
+        </p>
+        <div class="area-detail-grid">
+          <article id="java-oop-concepts" class="area-detail-card">
+            <p class="eyebrow">Java OOP</p>
+            <h3>Classes, Objects, Methods, and Object State</h3>
+            <p>
+              Java OOP examples explain how classes model real entities, how constructors initialize state, and how
+              methods such as credit and debit change object data through controlled behaviour.
+            </p>
+          </article>
+          <article id="data-structures" class="area-detail-card">
+            <p class="eyebrow">Data Structures</p>
+            <h3>Arrays, Recursion, Sorting, and Algorithmic Thinking</h3>
+            <p>
+              Data-structure examples connect arrays, recursive calls, partitioning, and sorting logic to the type of
+              step-by-step reasoning learners need for software problem solving, debugging, and application development.
+            </p>
+          </article>
+        </div>
+        <pre><code>public class BankAccount {
+  String name;
+  int accountNo;
+  double balance;
+
+  public BankAccount(String n, int an, double b) {
+    name = n;
+    accountNo = an;
+    balance = b;
+  }
+
+  public void credit(double amount) {
+    balance = balance + amount;
+  }
+
+  public void debit(double amount) {
+    balance = balance - amount;
+  }
+}
+
+static void quicksort(int[] arr, int left, int right) {
+  if (left &lt; right) {
+    int pivotIndex = partition(arr, left, right);
+    quicksort(arr, left, pivotIndex - 1);
+    quicksort(arr, pivotIndex + 1, right);
+  }
+}</code></pre>
+      </section>
+
+        </div>
+      </div>
+
+      <section class="documentation-value">
+        <p class="eyebrow">Training and Documentation Value</p>
+        <h2>Clear Technical Communication Across Software Topics</h2>
+        <p class="section-intro">
+          These portfolio samples also show how technical content can be organized into practical explanations,
+          repeatable labs, guided troubleshooting, and workplace-ready documentation.
+        </p>
+        <div class="evidence-grid">
+          <article>
+            <h3>Concept to Practice</h3>
+            <p>I translate theory into hands-on exercises, guided labs, examples, and troubleshooting steps.</p>
+          </article>
+          <article>
+            <h3>Cross-Technology Range</h3>
+            <p>My technical range covers front end, back end, databases, mobile, testing, desktop apps, and cloud foundations.</p>
+          </article>
+          <article>
+            <h3>Professional Communication</h3>
+            <p>I can produce user guides, onboarding documentation, walkthroughs, lab instructions, and technical explainers.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

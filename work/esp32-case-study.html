@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESP32 Media Device Case Study | Ravdeep Kaur</title>
+    <link rel="stylesheet" href="../styles.css?v=20260531-skills-section-rework">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="../index.html#top">
+          <span>Ravdeep Kaur</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html#portfolio-work">Portfolio Work</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#instructional-practice">Skills</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="sample-page">
+      <header>
+        <p class="eyebrow">Technical Project Case Study</p>
+        <h1>ESP32-S3 Media Device With Smart IoT Features</h1>
+        <p class="lead">
+          A working embedded systems prototype built with ESP32-S3 and Arduino, combining internet radio,
+          MP3 playback, audio output, weather API integration, display graphics, and a compact user interface.
+        </p>
+      </header>
+
+      <section class="project-gallery" aria-label="ESP32 media device project photos">
+        <div class="slider" data-slider>
+          <div class="slider-frame">
+            <figure class="slide is-active">
+              <img src="../assets/esp32-media-device-4.jpg" alt="Finished ESP32-S3 media device showing the online radio interface on a front display.">
+              <figcaption>Finished prototype with online radio UI, display panel, speaker enclosure, and playback controls.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="../assets/esp32-media-device-mp3.jpg" alt="ESP32-S3 media device screen showing the MP3 player interface with audio file list and playback controls.">
+              <figcaption>MP3 player interface with file list, playback controls, volume indicator, and time display.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="../assets/esp32-media-device-weather.jpg" alt="ESP32-S3 media device weather screen showing clear conditions, temperature, wind, pressure, humidity, and feels-like temperature.">
+              <figcaption>Weather screen showing live weather values including temperature, wind, pressure, humidity, and feels-like temperature.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="../assets/esp32-media-device-1.jpg" alt="ESP32-S3 development setup connected to display, wiring, speaker, and laptop code editor.">
+              <figcaption>Development setup with Arduino libraries, display wiring, and audio hardware.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="../assets/esp32-media-device-2.jpg" alt="ESP32-S3 board connected to jumper wires and breadboard during prototype testing.">
+              <figcaption>Hardware prototyping stage with ESP32-S3 board, breadboard, and wiring.</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="../assets/esp32-media-device-3.jpg" alt="Finished ESP32-S3 media device showing clock and quote screen.">
+              <figcaption>Clock, date, and rotating quote screen displayed on the finished unit.</figcaption>
+            </figure>
+          </div>
+          <button class="slider-control previous" type="button" data-slider-prev aria-label="Previous project photo">&lsaquo;</button>
+          <button class="slider-control next" type="button" data-slider-next aria-label="Next project photo">&rsaquo;</button>
+          <div class="slider-dots" aria-label="Choose project photo">
+            <button class="is-active" type="button" data-slide-dot="0" aria-label="Show online radio photo"></button>
+            <button type="button" data-slide-dot="1" aria-label="Show MP3 player photo"></button>
+            <button type="button" data-slide-dot="2" aria-label="Show weather dashboard photo"></button>
+            <button type="button" data-slide-dot="3" aria-label="Show development setup photo"></button>
+            <button type="button" data-slide-dot="4" aria-label="Show hardware prototype photo"></button>
+            <button type="button" data-slide-dot="5" aria-label="Show clock and quote photo"></button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Overview</h2>
+        <p>
+          This project explored how far a microcontroller-based device can go without relying on a full operating
+          system. The goal was to build a compact media device that could connect to WiFi, stream online radio,
+          play MP3 audio, show live information, and maintain a responsive visual interface on the display.
+        </p>
+        <p>
+          The work required combining hardware setup, Arduino programming, UI state management, API calls, audio
+          streaming, and practical troubleshooting. It is a strong example of self-directed technical learning and
+          the ability to explain a complete system from concept to working prototype.
+        </p>
+      </section>
+
+      <section>
+        <h2>Core Features</h2>
+        <p>
+          The project photos show the hardware prototype, development setup, online radio interface, MP3 player,
+          weather dashboard, and clock/quote screen.
+        </p>
+        <div class="evidence-grid">
+          <article>
+            <h3>Internet Radio</h3>
+            <p>Streams online radio stations over WiFi and displays playback status through a visual interface.</p>
+          </article>
+          <article>
+            <h3>MP3 Playback</h3>
+            <p>Shows an MP3 player screen with file selection, playback controls, status text, and volume display.</p>
+          </article>
+          <article>
+            <h3>Audio DAC Output</h3>
+            <p>Integrates audio output hardware for speaker playback from the ESP32-S3 media workflow.</p>
+          </article>
+          <article>
+            <h3>Weather API</h3>
+            <p>Displays weather, temperature, feels-like temperature, wind, pressure, and humidity values.</p>
+          </article>
+          <article>
+            <h3>Clock and Quotes</h3>
+            <p>Shows time, date, and rotating quote content for an idle or information display mode.</p>
+          </article>
+          <article>
+            <h3>Display Graphics</h3>
+            <p>Uses screen states, controls, text layout, icons, and status indicators for a cohesive UI.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Technical Stack and Concepts</h2>
+        <table>
+          <thead>
+            <tr><th>Area</th><th>What Was Demonstrated</th><th>Professional Relevance</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Embedded Hardware</td>
+              <td>ESP32-S3 board, speaker/audio wiring, display module, breadboard prototyping, enclosure integration.</td>
+              <td>Shows practical systems thinking, prototyping, and troubleshooting across hardware/software boundaries.</td>
+            </tr>
+            <tr>
+              <td>Arduino Development</td>
+              <td>Library setup, microcontroller programming, event flow, display updates, and build/run iteration.</td>
+              <td>Demonstrates ability to learn and explain developer tools and platform-specific workflows.</td>
+            </tr>
+            <tr>
+              <td>Networking and APIs</td>
+              <td>WiFi connectivity, online audio streaming, weather API requests, dynamic data display.</td>
+              <td>Connects embedded development to common software concepts such as HTTP APIs and live data.</td>
+            </tr>
+            <tr>
+              <td>Audio and Media</td>
+              <td>Internet radio, MP3 playback, audio output path, responsive playback experience.</td>
+              <td>Shows applied problem solving where timing, resources, and user experience matter together.</td>
+            </tr>
+            <tr>
+              <td>User Interface</td>
+              <td>Online radio screen, clock/quote mode, status text, button controls, and display graphics.</td>
+              <td>Supports technical training roles that require explaining how users interact with systems.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Build Challenge</h2>
+        <p>
+          The most important challenge was keeping multiple tasks stable at the same time: streaming audio,
+          decoding or playing media, maintaining WiFi connectivity, requesting live data, and updating the display.
+          On constrained hardware, every feature affects memory, timing, responsiveness, and reliability.
+        </p>
+        <p>
+          This makes the project useful as a technical case because it shows that software is not only syntax. It is
+          also coordination: understanding resources, user expectations, hardware limitations, dependencies, and
+          debugging feedback from the device.
+        </p>
+      </section>
+
+      <section class="lesson-box">
+        <h2>Training and Documentation Application</h2>
+        <p>
+          This project can support lessons in IoT fundamentals, embedded programming, API integration, UI states,
+          prototyping, troubleshooting, technical documentation, and project-based learning. It provides a
+          concrete system where hardware, software, networking, and user experience all connect.
+        </p>
+      </section>
+
+      <section>
+        <h2>Project Relevance</h2>
+        <div class="evidence-grid">
+          <article>
+            <h3>System Explanation</h3>
+            <p>Shows the ability to explain a full technical system: hardware setup, libraries, WiFi, APIs, UI states, audio flow, and troubleshooting.</p>
+          </article>
+          <article>
+            <h3>Technical Documentation</h3>
+            <p>Provides a strong documentation story: requirements, components, feature behavior, constraints, build challenges, and user-facing outcomes.</p>
+          </article>
+          <article>
+            <h3>Learning Design</h3>
+            <p>Demonstrates the ability to convert a complex prototype into clear training material, product walkthroughs, and onboarding content.</p>
+          </article>
+        </div>
+        <p>
+          This case study presents a practical build from concept to working prototype. It highlights technical
+          systems thinking, hands-on experimentation, debugging discipline, and clear communication across hardware,
+          software, networking, media playback, and user interface design.
+        </p>
+      </section>
+    </main>
+    <script>
+      const slider = document.querySelector("[data-slider]");
+      const slides = Array.from(slider.querySelectorAll(".slide"));
+      const dots = Array.from(slider.querySelectorAll("[data-slide-dot]"));
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle("is-active", slideIndex === currentSlide);
+        });
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("is-active", dotIndex === currentSlide);
+        });
+      }
+
+      slider.querySelector("[data-slider-prev]").addEventListener("click", () => showSlide(currentSlide - 1));
+      slider.querySelector("[data-slider-next]").addEventListener("click", () => showSlide(currentSlide + 1));
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => showSlide(index));
+      });
+    </script>
+  </body>
+</html>
